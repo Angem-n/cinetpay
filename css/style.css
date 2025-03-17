@@ -586,27 +586,254 @@ form {
 .roki{
     color: white;
 }
-@media (max-width: 768px) {
+/* Media Queries pour la responsivité */
+
+/* Pour les tablettes (768px à 1024px) */
+@media screen and (max-width: 1024px) {
     .container {
-        width: 90%;
+        padding: 0 20px;
     }
-    nav {
+
+    .menu {
+        margin-left: 0;
+    }
+
+    .cinetpaylogo {
+        margin-left: 0;
+    }
+
+    .abb {
+        margin-right: 0;
+    }
+
+    .video video {
+        width: 100%;
+    }
+
+    .zero-container {
         flex-direction: column;
+        gap: 40px;
+    }
+
+    .zero-image img {
+        max-width: 100%;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial-box {
+        height: auto;
+    }
+
+    .stats-section {
+        padding: 20px;
+    }
+
+    .stat-item {
+        flex: 1 1 45%;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+        gap: 20px;
         text-align: center;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-column {
+        flex: 1 1 45%;
     }
 }
 
-/* Téléphone */
-@media (max-width: 480px) {
+@media screen and (max-width: 767px) {
     .container {
-        width: 100%;
+        width: 100%; /* Utiliser toute la largeur */
+        padding: 0 10px; /* Ajouter un peu de marge */
     }
-    header, nav, main, footer {
-        padding: 10px;
+
+    .header .container {
+        flex-direction: column; /* Empiler le logo et le menu */
+        gap: 10px;
     }
-    nav {
-        font-size: 14px;
+
+    .menu ul {
+        flex-direction: column; /* Empiler les éléments du menu */
+        gap: 10px;
     }
+
+    .button {
+        flex-direction: column; /* Empiler les boutons */
+        gap: 10px;
+    }
+
+    .hero {
+        padding-bottom: 20px; /* Réduire l'espacement */
+    }
+
+    .lien {
+        margin-left: 10%; /* Centrer le lien */
+        padding: 5px; /* Réduire l'espacement */
+    }
+
+    .title1 {
+        font-size: 30px; /* Réduire la taille du titre */
+    }
+
+    .p1 {
+        font-size: 16px; /* Réduire la taille du texte */
+    }
+
+    .hd video {
+        width: 100%; /* Adapter la vidéo à la largeur de l'écran */
+    }
+
+    .mar {
+        flex-direction: column; /* Empiler les éléments */
+        gap: 20px;
+    }
+
+    .zero-image img {
+        width: 100%; /* Adapter les images à la largeur de l'écran */
+    }
+
+    .foto {
+        justify-content: center; /* Centrer les logos partenaires */
+        gap: 10px;
+    }
+
+    .complete {
+        flex-direction: column; /* Empiler les cercles */
+        align-items: center;
+    }
+
+    .circle {
+        flex: 1 1 100%; /* Prendre toute la largeur */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Empiler les colonnes du footer */
+        gap: 20px;
+    }
+
+    .login-section {
+        flex-direction: column; /* Empiler les sections de connexion */
+    }
+
+    .login-left {
+        display: none; /* Masquer l'image sur mobile */
+    }
+
+    .login-container {
+        padding: 10px; /* Réduire l'espacement */
+    }
+
+    .login-header h1 {
+        font-size: 24px; /* Réduire la taille du titre */
+    }
+
+    .login-subtitle {
+        font-size: 14px; /* Réduire la taille du texte */
+    }
+
+    .form-group input {
+        font-size: 14px; /* Réduire la taille des champs de formulaire */
+    }
+
+    .login-button {
+        font-size: 14px; /* Réduire la taille du bouton */
+    }
+
+    .forgot-password, .no-account, .create-account {
+        font-size: 12px; /* Réduire la taille des liens */
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%; /* Réduire la largeur du conteneur */
+    }
+
+    .menu {
+        margin-left: 0; /* Réinitialiser la marge */
+    }
+
+    .hero {
+        padding-bottom: 40px; /* Réduire l'espacement */
+    }
+
+    .lien {
+        margin-left: 20%; /* Centrer le lien */
+    }
+
+    .title1 {
+        font-size: 40px; /* Réduire la taille du titre */
+    }
+
+    .p1 {
+        font-size: 18px; /* Réduire la taille du texte */
+    }
+
+    .hd video {
+        width: 100%; /* Adapter la vidéo à la largeur de l'écran */
+    }
+
+    .mar {
+        flex-direction: column; /* Empiler les éléments */
+        gap: 40px;
+    }
+
+    .zero-image img {
+        width: 100%; /* Adapter les images à la largeur de l'écran */
+    }
+
+    .foto {
+        justify-content: center; /* Centrer les logos partenaires */
+        gap: 20px;
+    }
+
+    .complete {
+        flex-direction: column; /* Empiler les cercles */
+        align-items: center;
+    }
+
+    .circle {
+        flex: 1 1 100%; /* Prendre toute la largeur */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Empiler les colonnes du footer */
+        gap: 40px;
+    }
+
+    .login-section {
+        flex-direction: column; /* Empiler les sections de connexion */
+    }
+
+    .login-left {
+        display: none; /* Masquer l'image sur tablette */
+    }
+
+    .login-container {
+        padding: 20px; /* Réduire l'espacement */
+    }
+}
 
     
     
