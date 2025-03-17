@@ -586,6 +586,27 @@ form {
 .roki{
     color: white;
 }
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Téléphone */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    header, nav, main, footer {
+        padding: 10px;
+    }
+    nav {
+        font-size: 14px;
+    }
 
     
     
